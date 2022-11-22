@@ -1,6 +1,7 @@
 @font-face {
-    font-family:'Goudy Old Style' ;
+    font-family:Geotop_Fuente;
     src: url('../Fonts/goudy-old-style/Goudy\ Old\ Style\ Bold.ttf');
+
 }
 
 *{
@@ -43,8 +44,8 @@ nav{
     font-size: 3vw;
     color: var(--color-texto-Geo-Top);
     font-weight: bold;
-    font-family: 'Goudy Old Style';
-    width: 55vw;
+    font-family: Geotop_Fuente;
+    width: 60vw;
     min-width: 15vw;
 
 }
