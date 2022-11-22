@@ -30,15 +30,18 @@
     <div id="contenedor-secciones">
         
         <div id="trabajos" class="seccion">
-            
+            <h1 class="titulo-secciones">TRABAJOS</h1>
+            <p class="descripcion-secciones"></p>
         </div>
         
         <div id="Equipos" class="seccion">
-            
+            <h1 class="titulo-secciones">EQUIPOS</h1>
+            <p class="descripcion-secciones"></p>
         </div>
         
         <div id="Servicios" class="seccion">
-            
+            <h1 class="titulo-secciones">SERVICIOS</h1>
+            <p class="descripcion-secciones"></p>
         </div>
         
     </div>
@@ -46,8 +49,16 @@
     <footer>
         <a href="#">Contacto</a>
         <a href="#">Acerca de nosotros</a>        
-        <p>Copiright GEO & TOPOS</p>
+
+        <p id="geotopTEXTpequeño"><span class="texto-geo-top-pequeño">GEO & TOPOS</span></p>
+        <script>
+            var fecha_actual = new Date();
+            document.getElementById("geotopTEXTpequeño").insertAdjacentText('beforeend'," " + fecha_actual.getFullYear());
+        </script>
+
     </footer>
+
+
 
 </body>
 </html>
