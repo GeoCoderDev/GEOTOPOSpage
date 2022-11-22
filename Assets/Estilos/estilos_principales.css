@@ -1,4 +1,7 @@
-@import url('../Fonts/goudy-old-style/Goudy\ Old\ Style\ Bold.ttf');
+@font-face {
+    font-family:'Goudy Old Style' ;
+    src: url('../Fonts/goudy-old-style/Goudy\ Old\ Style\ Bold.ttf');
+}
 
 *{
     margin: 0;
