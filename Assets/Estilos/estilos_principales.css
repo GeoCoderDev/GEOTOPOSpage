@@ -14,11 +14,11 @@
 :root{
 
     --color-texto-Geo-Top:rgb(5, 19, 99);
-
+    --color-verde-logo:rgb(88, 215, 40);
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #dddddd;
 }
 
 header{
@@ -30,6 +30,7 @@ a{
     text-decoration: none;    
 }
 
+
 nav{
     display:flex;
     flex-direction: row;
@@ -38,8 +39,9 @@ nav{
     height: 14vh;
     padding: 0 1vw;
     border-bottom: 1px solid black;
-
+    /* background-color: rgb(215, 240, 250); */
 }
+
 
 #Geo-top-text{
     font-size: 3vw;
@@ -48,9 +50,7 @@ nav{
     font-family: Geotop_Fuente;
     width: 60vw;
     min-width: 15vw;
-
 }
-
 
 a.pestaña-nav{
     color: var(--color-texto-Geo-Top);
@@ -59,20 +59,47 @@ a.pestaña-nav{
     border: 1.5px solid var(--color-texto-Geo-Top);
     padding: 0.25vw 1vw;
     border-radius: 1em/0.5em;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:1000px){
+    
+    #Geo-top-text{
+        font-size: 6vh;
+    }
+    a.pestaña-nav{
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width:640px){
+    
+    #Geo-top-text{
+        font-size: 4vw;
+    }
+    a.pestaña-nav{
+        font-size: 2.5vh;
+    }
+}
+
+a.pestaña-nav:hover{
+    border:10px solid var(--color-texto-Geo-Top);
 }
 
 #contenedor-logo{
-    height: 70vh;    
+    height: 80vh;    
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom:1px solid black;
+    /* border-bottom:1px solid black; */
 }
 
 #logo-grande{
     background-image: url('../images/Logo_Geotopos.jpg');
-    width: 50vh;
-    height: 65vh;
+    width: 60vh;
+    height: 80vh;
     background-size: contain;
-    border: 1px solid black;
+    background-repeat: no-repeat;
+    /* border: 1px solid black; */
 }
+
