@@ -22,7 +22,8 @@ body{
 }
 
 header{
-    background-color: rgb(255, 255, 255);    
+    background-color: rgb(255, 255, 255);  
+
 }
 
 a{
@@ -60,3 +61,18 @@ a.pestaña-nav{
     border-radius: 1em/0.5em;
 }
 
+#contenedor-logo{
+    height: 70vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid black;
+}
+
+#logo-grande{
+    background-image: url('../images/Logo_Geotopos.jpg');
+    width: 50vh;
+    height: 65vh;
+    background-size: contain;
+    border: 1px solid black;
+}
