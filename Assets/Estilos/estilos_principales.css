@@ -1,0 +1,58 @@
+@import url('../Fonts/goudy-old-style/Goudy\ Old\ Style\ Bold.ttf');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+:root{
+
+    --color-texto-Geo-Top:rgb(5, 19, 99);
+
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    background-color: rgb(255, 255, 255);    
+}
+
+a{
+    text-decoration: none;    
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 14vh;
+    padding: 0 1vw;
+    border-bottom: 1px solid black;
+
+}
+
+#Geo-top-text{
+    font-size: 3vw;
+    color: var(--color-texto-Geo-Top);
+    font-weight: bold;
+    font-family: 'Goudy Old Style';
+    width: 55vw;
+    min-width: 15vw;
+
+}
+
+
+a.pestaña-nav{
+    color: var(--color-texto-Geo-Top);
+    font-size: 1.5vw;
+    margin: 0 0.5vw;
+    border: 1.5px solid var(--color-texto-Geo-Top);
+    padding: 0.25vw 1vw;
+    border-radius: 1em/0.5em;
+}
+
