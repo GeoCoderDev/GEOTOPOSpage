@@ -18,13 +18,15 @@
 }
 
 body{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to right bottom,rgb(185, 232, 186), rgb(210, 229, 255)); */
+
 }
 
 header{
     background-color: rgb(255, 255, 255);  
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom:1px solid black;
+    border-bottom:2px solid rgb(152, 152, 152);
 }
 
 a{
@@ -111,21 +113,62 @@ a.pestaña-nav:hover{
 }
 
 .seccion{
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
     width: 90%;
     height: 60vh;
     padding: 3vh 2vw;
-    border-top:1px solid rgb(182, 182, 182);
+    border-top:1px solid rgb(152, 152, 152);
     margin: 2vh 0;
 }
 
 .seccion:nth-child(1){
     border-top: 0;
+}
 
+.seccion:nth-child(2){
+    flex-direction: row-reverse;
 }
 
 .seccion:nth-child(3){
     border-bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 2vh;
+}
+
+.titulo-secciones{
+    width: 100%;   
+}
+
+#Segundo{
+    text-align: right !important; 
+}
+
+.descripcion-secciones{
+    width:65%;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+
+.contenedor-imagenes-seccion{
+    width: 30%;
+    height: 50vh;
+    border: 1px solid black;    
+    margin: 0 2vw;
+    border-radius: 25%/12.5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+#imagenes-trabajo{
+    background-image: url('../images/Img-Datamine-3d.png');
+}
+
+#imagenes-equipos{
+    background-image: url('../images/Leica\ TCR-407.jpg');
 }
 
 footer{
@@ -141,7 +184,6 @@ footer{
     justify-content: space-around;
     padding: 4vh 0;
 }
-
 
 footer a, footer p{
     text-align: center;
