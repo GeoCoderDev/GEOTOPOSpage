@@ -121,6 +121,8 @@ a.pestaña-nav:hover{
     padding: 3vh 2vw;
     border-top:1px solid rgb(152, 152, 152);
     margin: 2vh 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccion:nth-child(1){
@@ -160,15 +162,16 @@ a.pestaña-nav:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
 }
 
 #imagenes-trabajo{
     background-image: url('../images/Img-Datamine-3d.png');
+    background-color: black;
 }
 
 #imagenes-equipos{
     background-image: url('../images/Leica\ TCR-407.jpg');
+    background-color: white;
 }
 
 footer{
