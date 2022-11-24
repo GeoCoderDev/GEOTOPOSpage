@@ -35,11 +35,13 @@ a{
     text-decoration: none;    
 }
 
-
-nav{
-    position: fixed;
+#contenedor-nav{
+    position: sticky;
     left: 0;
     top: 0;
+}
+
+nav{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -78,7 +80,6 @@ a.pestaña-nav:hover{
 }
 
 #contenedor-logo{
-    margin-top: 14vh;
     height: 86vh;    
     display: flex;
     align-items: center;
