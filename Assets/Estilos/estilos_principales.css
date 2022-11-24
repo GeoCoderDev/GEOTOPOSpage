@@ -21,7 +21,8 @@ body{
     background-color: rgb(244, 239, 239);
     /* background-image: linear-gradient(to right bottom,rgb(185, 232, 186), rgb(210, 229, 255)); */
     /* background-image: linear-gradient(to right bottom, rgb(255, 255, 255),rgb(195, 227, 182)); */
-    background-image: radial-gradient(white,rgb(227, 227, 227));
+    background-image: radial-gradient(white,rgb(245, 243, 243));
+    background-attachment:fixed ;
 }
 
 header{
@@ -137,7 +138,7 @@ a.pestaña-nav:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius:40px;
 }
 
@@ -158,6 +159,17 @@ a.pestaña-nav:hover{
     font-size: 1.3vw;
     border-radius: 10%/20%;
     color: white;
+}
+
+#titulo-presentacion{
+    text-align: center;
+    margin: 0.5em;    
+}
+
+#contenido-presentacion{
+    font-style: italic;
+    font-size: 1.5vw;
+    padding: 0 20%;
 }
 
 .contenedor-imagenes-seccion{
@@ -291,7 +303,7 @@ footer a:hover{
 
     #Geo-top-text{
         width: 100%;
-        font-size: 9vw;
+        font-size: 10vw;
         text-align: center;
     }
 
@@ -306,6 +318,11 @@ footer a:hover{
 
     .seccion{
         margin: 2vh 2vh;        
+    }
+
+    #contenido-presentacion{
+        font-size: 2vh;
+        text-align: center;
     }
 
     .descripcion-secciones{
