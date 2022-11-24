@@ -261,6 +261,18 @@ footer a:hover{
         width: 270px;
     }
 
+    .boton-seccion-ver-mas{
+        background-color: rgb(255, 94, 2);
+        width: 20vw;
+        height: 6vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 2.6vw;
+
+    }
     .contenedor-imagenes-seccion{
         width: 270px;
         height: 300px;
