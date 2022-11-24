@@ -37,6 +37,9 @@ a{
 
 
 nav{
+    position: fixed;
+    left: 0;
+    top: 0;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -45,6 +48,9 @@ nav{
     padding: 0 2vw;
     /* border-bottom: 1px solid black; */
     /* background-color: rgb(215, 240, 250); */
+    z-index: 3;
+    background-color: white;
+    border-bottom: 2px solid var(--color-texto-Geo-Top);
 }
 
 #Geo-top-text{
@@ -52,7 +58,7 @@ nav{
     color: var(--color-texto-Geo-Top);
     font-weight: bold;
     font-family: Geotop_Fuente;
-    width: 60vw;
+    width: 56vw;
     min-width: 15vw;
 }
 
@@ -64,6 +70,7 @@ a.pestaña-nav{
     padding: 0.25vw 1vw;
     border-radius: 1em/0.5em;
     transition: 0.3s;
+
 }
 
 a.pestaña-nav:hover{
@@ -71,6 +78,7 @@ a.pestaña-nav:hover{
 }
 
 #contenedor-logo{
+    margin-top: 14vh;
     height: 86vh;    
     display: flex;
     align-items: center;
