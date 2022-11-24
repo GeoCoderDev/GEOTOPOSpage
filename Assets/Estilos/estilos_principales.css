@@ -18,9 +18,10 @@
 }
 
 body{
-    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(244, 239, 239);
     /* background-image: linear-gradient(to right bottom,rgb(185, 232, 186), rgb(210, 229, 255)); */
-    background-image: linear-gradient(to right bottom, rgb(255, 255, 255),rgb(164, 255, 154));
+    /* background-image: linear-gradient(to right bottom, rgb(255, 255, 255),rgb(195, 227, 182)); */
+    background-image: radial-gradient(white,rgb(227, 227, 227));
 }
 
 header{
@@ -177,7 +178,34 @@ a.pestaña-nav:hover{
 }
 
 #imagenes-equipos{
-    background-image: url('../images/Leica\ TCR-407.jpg');
+    animation: imagenes_equipos linear 15s infinite;    
+}
+
+@keyframes imagenes_equipos {
+    0%{
+        background-image: url('../images/Leica\ TCR-407.jpg');
+    }
+
+    20%{
+        background-image: url('../images/Prisma.png');
+    }
+
+    40%{
+        background-image: url('../images/Tripode\ y\ baston.png');
+    }
+
+    60%{
+        background-image: url('../images/Gps\ y\ Brujula.png');
+    }
+
+    80%{
+        background-image: url('../images/Regla\ mas\ nivel.png');
+    }
+
+    100%{
+        background-image: url('../images/Leica\ TCR-407.jpg');
+    }
+
 }
 
 footer{
