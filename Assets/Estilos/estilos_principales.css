@@ -137,6 +137,12 @@ a.pestaña-nav:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius:40px;
+}
+
+.descripcion-secciones p{
+    width: 95%;
+    font-size: 1.5vw;    
 }
 
 .boton-seccion-ver-mas{
@@ -203,27 +209,50 @@ footer a:hover{
     font-size: 3vh;
 }
 
-@media screen and (max-width:1000px){
+/* MEDIA QUERIES */
+
+
+@media screen and (orientation:portrait){
+       
+}
+
+@media screen and (min-width:850px) and (max-width:1000px){
     
     #Geo-top-text{
-        font-size: 5vh;
+        font-size: 3.5vw;
     }
     a.pestaña-nav{
-        font-size: 3vh;
+        font-size: 2vw;
     }
 }
 
-@media screen and (max-width:640px){
-    
+@media screen and (min-width:401px) and (max-width:849px){
+
     #Geo-top-text{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     a.pestaña-nav{
-        font-size: 2.5vh;
+        font-size: 2.7vw;
+    }
+
+}
+
+@media screen and (orientation:portrait) and (min-width:501px) {
+    .descripcion-secciones{
+        height: 25vh;
+    }
+
+    .contenedor-imagenes-seccion{
+        height: 25vh;
+    }
+
+    .boton-seccion-ver-mas{
+        height: 5vh;
     }
 }
 
 @media screen and (orientation:portrait) and (max-width:500px) {
+
     .pestaña-nav{
         display: none;
     }    
@@ -240,15 +269,9 @@ footer a:hover{
 
     .titulo-secciones{
         font-size: 7vw;
-    }
-    
-}
-
-@media screen and (orientation:portrait) and (max-width:500px){
-
-    .titulo-secciones{
         text-align: center;
     }
+
     .contenedor-secciones{
         margin: 2vh 2vh;
     }
@@ -259,6 +282,11 @@ footer a:hover{
 
     .descripcion-secciones{
         width: 270px;
+    }
+    .descripcion-secciones p{
+        font-size: 2vh;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .boton-seccion-ver-mas{
@@ -285,5 +313,17 @@ footer a:hover{
     #Segundo{
         text-align: center;
     } 
-
+    
 }
+
+
+
+@media screen and (orientation:landscape) and (max-height:300px){
+    #Geo-top-text{
+
+        font-size: 8vh;
+
+    }
+}
+
+
