@@ -33,6 +33,7 @@ header{
 
 a{
     text-decoration: none;    
+    display: block;
 }
 
 #contenedor-nav{
@@ -50,7 +51,7 @@ nav{
     padding: 0 2vw;
     /* border-bottom: 1px solid black; */
     /* background-color: rgb(215, 240, 250); */
-    z-index: 3;
+    z-index: 1;
     background-color: white;
     border-bottom: 2px solid var(--color-texto-Geo-Top);
 }
@@ -60,7 +61,7 @@ nav{
     color: var(--color-texto-Geo-Top);
     font-weight: bold;
     font-family: Geotop_Fuente;
-    width: 56vw;
+    width: 52vw;
     min-width: 15vw;
 }
 
@@ -70,13 +71,21 @@ a.pestaña-nav{
     margin: 0 0.5vw;
     border: 1.5px solid var(--color-texto-Geo-Top);
     padding: 0.25vw 1vw;
-    border-radius: 1em/0.5em;
     transition: 0.3s;
+}
 
+#boton-inicio, #boton-trabajos, #boton-equipos, #boton-servicios{
+    background-color: var(--color-texto-Geo-Top);
+    color: white;
+    border-radius: 1em/0.5em;
+    color: white;
 }
 
 a.pestaña-nav:hover{
-    border: 6px solid var(--color-texto-Geo-Top);
+    /* border: 4px solid var(--color-texto-Geo-Top); */
+    background-color: var(--color-texto-Geo-Top);
+    color:white;
+    border-radius: 1em/0.5em;
 }
 
 #contenedor-logo{
@@ -85,6 +94,40 @@ a.pestaña-nav:hover{
     align-items: center;
     justify-content: center;
     /* border-bottom:1px solid black; */
+}
+
+#contenedor-menu-desplegable{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menu-Desplegable{
+    position: absolute;
+    margin-top: 35vh;
+    background-color: var(--color-texto-Geo-Top);
+    display: none;
+}
+
+#contenedor-menu-desplegable:hover #Menu-Desplegable{
+    display: block;
+}
+
+#Menu-Desplegable a{
+    height: 5vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 12vw;
+    height: 9vh;
+    line-height: 3vh;
 }
 
 #logo-grande{
