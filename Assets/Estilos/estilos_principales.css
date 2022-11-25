@@ -105,13 +105,9 @@ a.pestaña-nav:hover{
 
 #Menu-Desplegable{
     position: absolute;
-    margin-top: 35vh;
-    background-color: var(--color-texto-Geo-Top);
+    margin-top: 30vh;
     display: none;
-}
-
-#contenedor-menu-desplegable:hover #Menu-Desplegable{
-    display: block;
+    
 }
 
 #Menu-Desplegable a{
@@ -123,11 +119,24 @@ a.pestaña-nav:hover{
     justify-content: center;
     font-size: 1vw;
     color: white;
-    border: 1px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: var(--color-texto-Geo-Top);
     text-align: center;
     width: 12vw;
     height: 9vh;
     line-height: 3vh;
+    font-weight: 300;
+}
+
+#contenedor-menu-desplegable:hover #Menu-Desplegable, #Menu-Desplegable:hover{
+    display: block;
+    height: 26vh; 
+    padding-top: 2vh;
+}
+
+#Menu-Desplegable a:hover{
+    border-radius: 30%/30%;
 }
 
 #logo-grande{
@@ -163,11 +172,11 @@ a.pestaña-nav:hover{
     border-top: 0;
 }
 
-.seccion:nth-child(2){
+.seccion:nth-child(3){
     flex-direction: row-reverse;
 }
 
-.seccion:nth-child(3){
+.seccion:nth-child(4){
     border-bottom: 0;
     margin-bottom: 1,5em;
 }
@@ -242,7 +251,7 @@ a.pestaña-nav:hover{
 }
 
 #imagenes-equipos{
-    animation: imagenes_equipos linear 15s infinite;    
+    animation: imagenes_equipos linear 30s infinite;    
 }
 
 @keyframes imagenes_equipos {
@@ -250,20 +259,48 @@ a.pestaña-nav:hover{
         background-image: url('../images/Leica\ TCR-407.jpg');
     }
 
-    20%{
+    8%{
         background-image: url('../images/Prisma.png');
     }
 
-    40%{
+    16.6%{
+        background-image: url('../images/Prisma.png');
+    }
+
+    25%{
         background-image: url('../images/Tripode\ y\ baston.png');
     }
 
-    60%{
+    33.2%{
+        background-image: url('../images/Tripode\ y\ baston.png');
+    }
+
+    41%{
         background-image: url('../images/Gps\ y\ Brujula.png');
     }
 
-    80%{
+    49.8%{
+        background-image: url('../images/Gps\ y\ Brujula.png');
+    }
+
+    57.8%{
         background-image: url('../images/Regla\ mas\ nivel.png');
+    }
+
+    65.4%{
+        background-image: url('../images/Regla\ mas\ nivel.png');
+    }
+
+    73.4%{
+        background-image: url('../images/Drone\ phamtom\ 4.jpg');
+    }
+
+    82%{
+        background-image: url('../images/Drone\ phamtom\ 4.jpg');
+    }
+
+    90%{
+        background-image: url('../images/Leica\ TCR-407.jpg');
     }
 
     100%{
