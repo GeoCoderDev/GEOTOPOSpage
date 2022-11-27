@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO & TOPOS</title>
+    <link rel="shortcut icon" href="Assets/images/Logo_Geotopos.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/Estilos/estilos_base.css">
+    
+</head>
+<body>
+
+    <div id="contenedor-nav">
+        <nav>
+            <div id="Geo-top-text">GEO & TOPOS</div>
+            <a href="index.html" class="pestaña-nav">INICIO</a>
+            <!-- Por el momento no se mostrara trabajos -->
+            <!-- <a href="trabajos_realizados.html" class="pestaña-nav">TRABAJOS</a> -->
+            <a href="Equipos.html" class="pestaña-nav">EQUIPOS</a>
+            <div id="contenedor-menu-desplegable">
+                <a class="pestaña-nav" id="boton-servicios">SERVICIOS▾</a> 
+                <div id="Menu-Desplegable">
+                    <a href="servicios-topografia.html">TOPOGRAFÍA</a>
+                    <a href="servicios-geologia.html">GEOLOGÍA</a>
+                    <a href="servicios-consultoria-tecnica.html">CONSULTORÍA TÉCNICA</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <a href="#">Contacto</a>
+        <a href="#">Acerca de nosotros</a>        
+
+        <p id="geotopTEXTpequeño"><span class="texto-geo-top-pequeño">GEO & TOPOS</span></p>
+        <script>
+            var fecha_actual = new Date();
+            document.getElementById("geotopTEXTpequeño").insertAdjacentText('beforeend'," " + fecha_actual.getFullYear());
+        </script>
+
+    </footer>
+
+</body>
+</html>
