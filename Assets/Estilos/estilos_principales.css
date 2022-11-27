@@ -44,6 +44,7 @@ a{
     position: sticky;
     left: 0;
     top: 0;
+    z-index: 10;
 }
 
 nav{
@@ -55,7 +56,6 @@ nav{
     padding: 0 2vw;
     /* border-bottom: 1px solid black; */
     /* background-color: rgb(215, 240, 250); */
-    z-index: 1;
     background-color: azure;
     /* background-image: linear-gradient(rgb(194, 255, 171) ,azure,rgb(194, 255, 171)); */
     border-bottom: 2px solid var(--color-texto-Geo-Top);
@@ -279,7 +279,11 @@ a.pestaña-nav:hover{
     
 }
 
-.titulo-seccion-izquierda-derecha{
+#texto-en-caso-portrait{
+    display: none;
+}
+
+.titulo-seccion-izquierda-derecha-centro{
     text-align: center;
     font-size: 4vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
@@ -418,7 +422,7 @@ li{
 }
 
 #imagenes-equipos{
-    animation: imagenes_equipos linear 30s infinite;    
+    animation: imagenes_equipos linear 28s infinite;    
 }
 
 @keyframes imagenes_equipos {
@@ -520,8 +524,49 @@ footer a:hover{
 }
 
 @media screen and (orientation:portrait){
+    
+    header{
+        display: block;
+    }
+
+    #texto-en-caso-portrait{
+        /* position: relative; */
+        /* animation: mostrar-lista 10s linear infinite; */
+        width: 100%;
+        height: 72vh;
+        /* border:1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #lista-seccion-centro{
+        font-size: 4vw;
+        display: block;
+        /* border: 1px solid black; */
+        width: 80%;
+        list-style-type: square;
+        padding-left: 26vw;
+        line-height: 5vh;
+    }
+
+
+    .titulo-seccion-izquierda-derecha-centro{
+        font-size: 8vw;
+
+        margin:3vh
+    }
+
+ 
     #texto-header-izquierda,#texto-header-derecha{
         display: none;
+    }
+
+    #texto-en-caso-portrait{
+        display: block;
     }
 
     #contenedor-logos{
@@ -538,6 +583,7 @@ footer a:hover{
     #logos1, #logos2, #logos3{
         width: 25vw;
     }
+
 
 }
 
