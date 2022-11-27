@@ -107,7 +107,7 @@ a.pestaña-nav:hover{
 #logo-grande{
     background-image: url('../images/Logo_Geotopos.jpg');
     width: 30vw;
-    height: 68vh;
+    height: 60vh;
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid black; */
@@ -117,44 +117,50 @@ a.pestaña-nav:hover{
 
 #logos1{
     /* border:1px solid black; */
+    border-radius: 20%/20%;
     width: 9vw;
     height: 16vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     animation: cambiarLogo1 10s linear infinite;
+    /* box-shadow:4px 4px 6px rgba(0,0,0,0.5); */
 }
 
 #logos2{
     /* border:1px solid black; */
+    border-radius: 20%/20%;
     width: 9vw;
     height: 16vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     animation: cambiarLogo2 10s linear infinite;
+    /* box-shadow:4px 4px 6px rgba(0,0,0,0.5); */
 }
 
 #logos3{
     /* border:1px solid black; */
+    border-radius: 20%/20%;
     width: 9vw;
     height: 16vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     animation: cambiarLogo3 10s linear infinite; 
+    /* box-shadow:4px 4px 6px rgba(0,0,0,0.5); */
 }
 
 @keyframes cambiarLogo1{
     0%{
         background-image: url('../images/Leica\ Geosystems\ Logo.png');
     }
-    10%{
-        background-image: url('../images/Autocad\ Logo.png');
+    20%{
+        background-image: url('../images/Autocad\ Logo.jfif');
     }
 
     50%{
-        background-image: url('../images/Autocad\ Logo.png');
+        background-image: url('../images/Autocad\ Logo.jfif');
     }
 
     70%{
@@ -171,7 +177,7 @@ a.pestaña-nav:hover{
         background-image: url('../images/topcon\ Logo.png')
     }
 
-    10%{
+    20%{
         background-image: url('../images/Datamine\ Logo.png');
     }
 
@@ -193,7 +199,7 @@ a.pestaña-nav:hover{
         background-image: url('../images/GARMIN\ logo.png')
     }
 
-    10%{
+    20%{
         background-image: url('../images/Global\ Mapper\ logo.png');
     }
 
@@ -283,17 +289,20 @@ a.pestaña-nav:hover{
     font-size: 2vw;
     padding-right: 2vw;
     line-height:10vh ;
+    list-style-type: square;
 }
 
 #lista-seccion-derecha{
     font-size: 2vw;
     line-height:15.1vh ;
     /* border: 1px solid black; */
-    padding-left: 5vw;
+    padding-left: 8vw;
+    list-style-type: square;
 }
 
 li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* display: block; */
 }
 
 .doble-linea{
@@ -511,7 +520,25 @@ footer a:hover{
 }
 
 @media screen and (orientation:portrait){
-       
+    #texto-header-izquierda,#texto-header-derecha{
+        display: none;
+    }
+
+    #contenedor-logos{
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #logo-grande{
+        width: 90vw;
+    }
+
+    #logos1, #logos2, #logos3{
+        width: 25vw;
+    }
+
 }
 
 @media screen and (min-width:850px) and (max-width:1000px){
