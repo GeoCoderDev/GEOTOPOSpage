@@ -66,7 +66,7 @@ nav{
     color: var(--color-texto-Geo-Top);
     font-weight: bold;
     font-family: Geotop_Fuente;
-    width: 58vw;
+    width: 65vw;
     min-width: 15vw;
 }
 
@@ -93,21 +93,121 @@ a.pestaña-nav:hover{
     border-radius: 1em/0.5em;
 }
 
-#contenedor-logo{
-    height: 86vh;    
+#contenedor-logos{
+    height: 86vh;  
+    width: 30vw;  
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     /* border:1px solid black; */
 }
 
 #logo-grande{
     background-image: url('../images/Logo_Geotopos.jpg');
     width: 30vw;
-    height: 86vh;
+    height: 68vh;
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid black; */
+    background-position: center;
+    
+}
+
+#logos1{
+    /* border:1px solid black; */
+    width: 9vw;
+    height: 16vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: cambiarLogo1 10s linear infinite;
+}
+
+#logos2{
+    /* border:1px solid black; */
+    width: 9vw;
+    height: 16vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: cambiarLogo2 10s linear infinite;
+}
+
+#logos3{
+    /* border:1px solid black; */
+    width: 9vw;
+    height: 16vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: cambiarLogo3 10s linear infinite; 
+}
+
+@keyframes cambiarLogo1{
+    0%{
+        background-image: url('../images/Leica\ Geosystems\ Logo.png');
+    }
+    10%{
+        background-image: url('../images/Autocad\ Logo.png');
+    }
+
+    50%{
+        background-image: url('../images/Autocad\ Logo.png');
+    }
+
+    70%{
+        background-image: url('../images/Leica\ Geosystems\ Logo.png');
+    }
+    
+    100%{
+        background-image: url('../images/Leica\ Geosystems\ Logo.png');
+    }
+}
+
+@keyframes cambiarLogo2{
+    0%{
+        background-image: url('../images/topcon\ Logo.png')
+    }
+
+    10%{
+        background-image: url('../images/Datamine\ Logo.png');
+    }
+
+    50%{
+        background-image: url('../images/Datamine\ Logo.png');
+    }
+
+    70%{
+        background-image: url('../images/topcon\ Logo.png')
+    }
+    
+    100%{
+        background-image: url('../images/topcon\ Logo.png')
+    }
+}
+
+@keyframes cambiarLogo3{
+    0%{
+        background-image: url('../images/GARMIN\ logo.png')
+    }
+
+    10%{
+        background-image: url('../images/Global\ Mapper\ logo.png');
+    }
+
+    50%{
+        background-image: url('../images/Global\ Mapper\ logo.png');
+    }
+
+    70%{
+        background-image: url('../images/GARMIN\ logo.png')
+    }
+    
+    100%{
+        background-image: url('../images/GARMIN\ logo.png')
+    }
 }
 
 
@@ -146,6 +246,7 @@ a.pestaña-nav:hover{
     height: 9vh;
     line-height: 3vh;
     font-weight: 300;
+    transition: 0.25s;
 }
 
 #contenedor-menu-desplegable:hover #Menu-Desplegable, #Menu-Desplegable:hover{
