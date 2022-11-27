@@ -1,0 +1,240 @@
+@font-face {
+    font-family:Geotop_Fuente;
+    src: url('../Fonts/goudy-old-style/Goudy\ Old\ Style\ Bold.ttf');
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+:root{
+
+    --color-texto-Geo-Top:rgb(5, 19, 99);
+    --color-verde-logo:rgb(88, 215, 40);
+}
+
+body{
+    background-color: rgb(244, 239, 239);
+    /* background-image: linear-gradient(to right bottom,rgb(185, 232, 186), rgb(210, 229, 255)); */
+    /* background-image: linear-gradient(to right bottom, rgb(255, 255, 255),rgb(195, 227, 182)); */
+    background-image: radial-gradient(white,rgb(245, 243, 243));
+    background-attachment:fixed ;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);  
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom:2px solid rgb(152, 152, 152);
+}
+
+a{
+    text-decoration: none;    
+    display: block;
+}
+
+#contenedor-nav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 14vh;
+    padding: 0 2vw;
+    /* border-bottom: 1px solid black; */
+    /* background-color: rgb(215, 240, 250); */
+    background-color: white;
+    /* background-image: linear-gradient(rgb(194, 255, 171) ,azure,rgb(194, 255, 171)); */
+    border-bottom: 2px solid var(--color-texto-Geo-Top);
+}
+
+#Geo-top-text{
+    font-size: 3vw;
+    color: var(--color-texto-Geo-Top);
+    font-weight: bold;
+    font-family: Geotop_Fuente;
+    width: 65vw;
+    min-width: 15vw;
+}
+
+a.pestaña-nav{
+    color: var(--color-texto-Geo-Top);
+    font-size: 1.5vw;
+    margin: 0 0.5vw;
+    border: 1.5px solid var(--color-texto-Geo-Top);
+    padding: 0.25vw 1vw;
+    transition: 0.3s;
+}
+
+#boton-inicio, #boton-trabajos, #boton-equipos, #boton-servicios{
+    background-color: var(--color-texto-Geo-Top);
+    color: white;
+    border-radius: 1em/0.5em;
+    color: white;
+}
+
+a.pestaña-nav:hover{
+    /* border: 4px solid var(--color-texto-Geo-Top); */
+    background-color: var(--color-texto-Geo-Top);
+    color:white;
+    border-radius: 1em/0.5em;
+}
+
+#contenedor-menu-desplegable{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menu-Desplegable{
+    position: absolute;
+    margin-top: 31vh;
+    display: none;
+    
+}
+
+#Menu-Desplegable a:nth-child(1){
+    border-top: 2px solid transparent;
+}
+
+#Menu-Desplegable a{
+    height: 5vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: var(--color-texto-Geo-Top);
+    text-align: center;
+    width: 12vw;
+    height: 9vh;
+    line-height: 3vh;
+    font-weight: 300;
+    transition: 0.25s;
+}
+
+#contenedor-menu-desplegable:hover #Menu-Desplegable, #Menu-Desplegable:hover{
+    display: block;
+    height: 26vh; 
+    padding-top: 2vh;
+}
+
+#Menu-Desplegable a:hover{
+    border-radius: 30%/30%;
+}
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 25vh;
+    background-color: black;
+    color: white;
+    font-size: 2.7vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding: 4vh 0;
+}
+
+footer a, footer p{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+footer a:hover{
+    color: rgb(148, 144, 144);
+}
+
+.texto-geo-top-pequeño{
+    font-family: Geotop_Fuente;    
+    font-size: 3vh;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-height:500px){
+    #Menu-Desplegable{
+        margin-top: 32vh;
+    }
+}
+
+@media screen and (max-height:280px){
+    #Menu-Desplegable{
+        margin-top: 34vh;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:1000px){
+    
+    #Geo-top-text{
+        font-size: 3.5vw;
+    }
+    a.pestaña-nav{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:849px){
+
+    #Geo-top-text{
+        font-size: 3.5vw;
+    }
+    a.pestaña-nav{
+        font-size: 2.7vw;
+    }
+
+}
+
+@media screen and (orientation:portrait) and (max-width:500px) {
+
+    .pestaña-nav{
+        display: none;
+    }    
+
+    nav{
+        justify-content: space-between;
+    }
+
+    #Geo-top-text{
+        width: 100%;
+        font-size: 10vw;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (orientation:landscape) and (max-height:300px){
+    #Geo-top-text{
+        font-size: 8vh;
+    }
+}
+
+
