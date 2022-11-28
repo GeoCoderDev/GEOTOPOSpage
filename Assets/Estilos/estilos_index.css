@@ -417,7 +417,7 @@ li{
 
 
 @media screen and (orientation:portrait) and (max-width:500px) {
-
+    
     .titulo-secciones{
         font-size: 7vw;
         text-align: center;
@@ -469,5 +469,6 @@ li{
     #Segundo{
         text-align: center;
     } 
+
 
 }
